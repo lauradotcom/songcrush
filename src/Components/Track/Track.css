@@ -18,6 +18,10 @@
   color: #F45A82;
 }
 
+.Track-action:focus {
+  outline: none;
+}
+
 .Track-information {
   flex-grow: 1;
   display: flex;
