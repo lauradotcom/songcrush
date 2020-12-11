@@ -1,0 +1,60 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+
+::selection {
+  background-color: #D8385E;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  padding: .77rem 0;
+  background-color: #422739;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.88rem;
+  color: #A1F2C7;
+}
+
+h1 .highlight {
+  color: #F45A82;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+}
+
+.App {
+  height: 100%;
+  padding: 0 17% 10% 17%;
+  background-image: url('./background_pastel_desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.App-playlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .App-playlist {
+    flex-direction: row;
+    align-items: stretch;
+    /*justify-content: space-evenly;*/
+    margin: 1%;
+  }
+}
