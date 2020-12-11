@@ -1,6 +1,6 @@
 .SearchResults {
   width: 100%;
-  height: 950px;
+  max-height: 950px;
   overflow-y: scroll;
   /*padding: .88rem;*/
   padding: 2.27rem 1.16rem;
@@ -17,6 +17,7 @@
 @media only screen and (min-width: 1024px) {
   .SearchResults {
     width: 50%;
+    height: 950px;
     margin-right: 2rem;
     margin-bottom: 0;
   }
