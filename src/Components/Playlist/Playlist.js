@@ -14,8 +14,7 @@ class Playlist extends React.Component {
 
     handleNameChange(e) {
         this.props.onNameChange(e.target.value);
-        //this.state.background = e.target.value === '' ? 'rgba(255, 255, 255, 0.1)' : 'transparent';
-        this.setState( { background: e.target.value === '' ? 'rgba(255, 255, 255, 0.1' : 'transparent' });
+        this.setState( { background: e.target.value === '' ? 'rgba(255, 255, 255, 0.1' : 'transparent' } );
     }
 
     render() {
