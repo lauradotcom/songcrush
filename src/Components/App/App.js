@@ -57,6 +57,7 @@ class App extends React.Component {
       this.setState({ searchResults: searchResults })
     });
   }
+  
 
 
   render() {
@@ -77,6 +78,7 @@ class App extends React.Component {
       </div>
     )
   }
-}
+};
+
 
 export default App;
