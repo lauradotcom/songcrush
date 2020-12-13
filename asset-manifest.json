@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/songcrush/static/css/main.888a85ad.chunk.css",
+    "main.js": "/songcrush/static/js/main.4a4b8627.chunk.js",
+    "main.js.map": "/songcrush/static/js/main.4a4b8627.chunk.js.map",
+    "runtime-main.js": "/songcrush/static/js/runtime-main.da92e521.js",
+    "runtime-main.js.map": "/songcrush/static/js/runtime-main.da92e521.js.map",
+    "static/js/2.88bb3683.chunk.js": "/songcrush/static/js/2.88bb3683.chunk.js",
+    "static/js/2.88bb3683.chunk.js.map": "/songcrush/static/js/2.88bb3683.chunk.js.map",
+    "static/js/3.bc8a0258.chunk.js": "/songcrush/static/js/3.bc8a0258.chunk.js",
+    "static/js/3.bc8a0258.chunk.js.map": "/songcrush/static/js/3.bc8a0258.chunk.js.map",
+    "index.html": "/songcrush/index.html",
+    "static/css/main.888a85ad.chunk.css.map": "/songcrush/static/css/main.888a85ad.chunk.css.map",
+    "static/js/2.88bb3683.chunk.js.LICENSE.txt": "/songcrush/static/js/2.88bb3683.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/songcrush/static/media/background_pastel_desktop.c9e62210.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da92e521.js",
+    "static/js/2.88bb3683.chunk.js",
+    "static/css/main.888a85ad.chunk.css",
+    "static/js/main.4a4b8627.chunk.js"
+  ]
+}
