@@ -1,6 +1,6 @@
 let accessToken;
 const clientId = '6b2ac9d97bdf4391a5efb499ae1f2378';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://lauradotcom.github.io/songcrush';
 
 const Spotify = {
 
