@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/songcrush/static/css/main.888a85ad.chunk.css",
-    "main.js": "/songcrush/static/js/main.c78b78df.chunk.js",
-    "main.js.map": "/songcrush/static/js/main.c78b78df.chunk.js.map",
+    "main.js": "/songcrush/static/js/main.427bd70d.chunk.js",
+    "main.js.map": "/songcrush/static/js/main.427bd70d.chunk.js.map",
     "runtime-main.js": "/songcrush/static/js/runtime-main.da92e521.js",
     "runtime-main.js.map": "/songcrush/static/js/runtime-main.da92e521.js.map",
     "static/js/2.88bb3683.chunk.js": "/songcrush/static/js/2.88bb3683.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.da92e521.js",
     "static/js/2.88bb3683.chunk.js",
     "static/css/main.888a85ad.chunk.css",
-    "static/js/main.c78b78df.chunk.js"
+    "static/js/main.427bd70d.chunk.js"
   ]
 }
