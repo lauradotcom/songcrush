@@ -2,6 +2,7 @@
 
 This is a playlist creation app that uses Spotify's API. Based on Codecademy's React capstone project, "Jammming," I have rebranded the app, restructured the stylesheets to make it mobile-first, and added more features and style modifications to improve its overall UX. I will continue to streamline the app by implementing more features.
 
+The deployed version on Github Pages is available here: https://lauradotcom.github.io/songcrush/
 You can reference the original Jammming solution project here: http://jammming.s3-website-us-east-1.amazonaws.com/ 
 
 ## Current Features
