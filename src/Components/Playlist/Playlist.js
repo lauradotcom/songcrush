@@ -20,7 +20,7 @@ class Playlist extends React.Component {
     render() {
         return (
             <div className="Playlist">
-                <input placeholder="Name Your Playlist"
+                <input placeholder="New Playlist"
                         type="text"
                         onChange={this.handleNameChange}
                         style={{ backgroundColor: this.state.background }} />
