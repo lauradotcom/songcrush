@@ -14,16 +14,13 @@ class App extends React.Component {
     this.state = { 
       searchResults: [],
       playlistName: 'New SongCrush Playlist',
-      playlistTracks: [],
-      isVisible: false
+      playlistTracks: []
     }; 
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
     this.search = this.search.bind(this);
-    //this.toggleVisibility = this.toggleVisibility.bind(this);
-    this.isVisible = this.isVisible.bind(this);
   }
 
   addTrack(track) {
@@ -39,12 +36,6 @@ class App extends React.Component {
     let tracks = this.state.playlistTracks;
     tracks = tracks.filter(currentTrack => currentTrack.id !== track.id);
     this.setState({ playlistTracks: tracks });
-  }
-
-  isVisible() {
-      let searchTerm = this.props.term;
-      //this.setState({ visibility: searchTerm === '' ? 'hidden' : 'visible' });
-      this.setState( { isVisible: searchTerm === '' ? false : true });
   }
 
   updatePlaylistName(name) {
