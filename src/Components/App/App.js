@@ -14,13 +14,16 @@ class App extends React.Component {
     this.state = { 
       searchResults: [],
       playlistName: 'New SongCrush Playlist',
-      playlistTracks: []
+      playlistTracks: [],
+      isVisible: false
     }; 
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
     this.search = this.search.bind(this);
+    //this.toggleVisibility = this.toggleVisibility.bind(this);
+    this.isVisible = this.isVisible.bind(this);
   }
 
   addTrack(track) {
@@ -36,6 +39,12 @@ class App extends React.Component {
     let tracks = this.state.playlistTracks;
     tracks = tracks.filter(currentTrack => currentTrack.id !== track.id);
     this.setState({ playlistTracks: tracks });
+  }
+
+  isVisible() {
+      let searchTerm = this.props.term;
+      //this.setState({ visibility: searchTerm === '' ? 'hidden' : 'visible' });
+      this.setState( { isVisible: searchTerm === '' ? false : true });
   }
 
   updatePlaylistName(name) {
@@ -66,14 +75,17 @@ class App extends React.Component {
         <h1>Song<span className="highlight">Crush</span></h1>
         <div className="App">
           <SearchBar onSearch={this.search} />
+          {this.state.searchResults.length === 0 ? null : (
           <div className="App-playlist">
-            <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
+            <SearchResults searchResults={this.state.searchResults} 
+                          onAdd={this.addTrack} />
             <Playlist playlistName={this.state.playlistName} 
                       playlistTracks={this.state.playlistTracks} 
                       onRemove={this.removeTrack}
                       onNameChange={this.updatePlaylistName}
                       onSave={this.savePlaylist} />
           </div>
+          )}
         </div>
       </div>
     )
