@@ -24,10 +24,11 @@
 
 .Track-information {
   flex-grow: 1;
+  flex-shrink: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 72px;
+  height: 6rem;
 }
 
 .Track-information h3 {
@@ -38,4 +39,10 @@
   font-size: .83rem;
   font-weight: 300;
   color: rgba(256, 256, 256, 0.8);
+}
+
+@media screen and (min-width: 1440px) {
+  .Track-information {
+    height: 4rem;
+  }
 }
