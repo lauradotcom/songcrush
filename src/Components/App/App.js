@@ -14,14 +14,17 @@ class App extends React.Component {
     this.state = { 
       searchResults: [],
       playlistName: 'New SongCrush Playlist',
-      playlistTracks: []
+      playlistTracks: [],
+      player: 'stopped'
     }; 
+
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
     this.savePlaylist = this.savePlaylist.bind(this);
     this.search = this.search.bind(this);
   }
+
 
   addTrack(track) {
     let tracks = this.state.playlistTracks;
