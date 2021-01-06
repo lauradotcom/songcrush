@@ -39,17 +39,18 @@ class Track extends React.Component {
         }
     }
 
-    // Display play or pause button based on whether track preview is currently playing or paused
+    // Display play or pause button based on whether track preview is currently playing, paused, or ended
     renderAudio() {
         if (this.state.play) {
             return (
                 <button className="Track-action">
                     <i className="fas fa-pause-circle"
-                      onClick={this.pauseSample}>
+                      onClick={this.pauseSample}
+                      onEnd={this.handleAudioEnd}>
                     </i>
                 </button>
                   )
-        } else { 
+        } else if (this.state.pause || this.audioSample.ended) { 
             return (
                 <button className="Track-action">
                     <i className="fas fa-play-circle"
@@ -62,13 +63,21 @@ class Track extends React.Component {
     // Play function using built-in JS Audio element (will be passed to AudioSample component via props)
     playSample() {
         this.audioSample.volume = 0.1;
+        this.audioSample.loop = true;
         this.setState(
-          { play: true, pause: false, volume: 0.1 },
+          { play: true, pause: false },
           () => {
-              this.audioSample.play();
+              this.audioSample.play(
+                  () => {
+                      console.log(this.audioSample.ended);
+                  }
+              );
               console.log(this.audioSample.volume);
+              console.log(this.audioSample.ended);
           });
-        };
+          console.log(this.audioSample.volume);
+          console.log(this.audioSample.ended);
+          };
 
     // Pause function -- want it to use the same Audio element from playSample() instead of creating a new instance
     pauseSample() {
@@ -78,6 +87,15 @@ class Track extends React.Component {
                 this.audioSample.pause();
             });
         };
+
+    // Event listener that changes sample's state to paused when the audio playback ends
+    handleAudioEnd(e) {
+        if (this.audioSample.ended) {
+            this.setState(
+                {play: false, pause: true}
+            )
+        }
+    }
 
     render() {
         return(

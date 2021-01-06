@@ -7,7 +7,7 @@
 .Track-action {
   cursor: pointer;
   padding: .5rem;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   transition: color .25s;
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 6rem;
+  height: 8rem;
 }
 
 .Track-information h3 {
@@ -43,6 +43,6 @@
 
 @media screen and (min-width: 1440px) {
   .Track-information {
-    height: 4rem;
+    height: 6rem;
   }
 }
